@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Registration - Sagada Tourism Office</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sagada Tourism Office</h1>
+        <p>Welcome! Please register below for your Sagada tour experience.</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Tourist Registration Form</h2>
+            <form id="tourist-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="sex">Sex</label>
+                <select id="sex" name="sex" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="valid_id">Upload Valid ID</label>
+                <input type="file" id="valid_id" name="valid_id" accept="image/*" required>
+
+                <label for="nationality">Nationality</label>
+                <input type="text" id="nationality" name="nationality" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sagada Tourism Office</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
